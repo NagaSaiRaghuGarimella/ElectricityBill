@@ -1,0 +1,31 @@
+#electricity{
+    background-color: white;
+    display:flex;
+    justify-content: center;
+}
+#bill{
+    background-color: rgb(224, 254, 244);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width:550px;
+    border:5px solid #770084;
+}
+td{
+   padding:5px 20px;
+   border:1px solid gray;
+}
+table{
+    border:2px solid black;
+    background-color:pink 
+}
+
+h2{
+    color: #770084;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: peru;
+    width:500px;
+    text-align: center;   
+}

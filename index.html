@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill</title>
+    <link rel="stylesheet" href="ElectricityBill.css">
+</head>
+<body>
+    <form action="" id="form_app">
+    <div id="electricity">
+        <div id="bill">
+            <h2>
+                Electricity Bill
+            </h2>
+       <table><tbody>
+        <tr>
+            <td><label for="">Enter RR <br>
+        number</label>
+            </td>
+            <td><input type="text" placeholder="Enter your RR Number" value="N8EH" required></td>
+        </tr>
+        <tr>
+            <td><label for="">Consumer <br> Name</label></td>
+            <td><input type="text" placeholder="Enter Consumer name" id="customer" required></td>
+        </tr>
+        <tr>
+            <td><label for="">Address</label></td>
+            <td><textarea name="" id="area" cols="20" rows="5" required></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="">Bill <br> Reading <br>Date</label></td>
+            <td><input type="date" id="currentDate" required></td>
+        </tr>
+        <tr>
+            <td><label for="">Enter Old <br>Meter <br>Reading
+            </label></td>
+            <td><input type="number" placeholder="Enter Old Reading" id="old"></td>
+        </tr>
+        <tr>
+            <td><label>Enter <br> Current <br> Meter <br> Reading</label></td>
+            <td><input type="number" placeholder="Enter Current Reading" id="current"></td>
+        </tr>
+        <tr>
+            <td><label for="">Enter <br>Arrears if <br> any.</label></td>
+            <td><input type="number" value="0" id="arrears"></td>
+        </tr>
+        <tr>
+            <td><button type="reset" id="reset" onclick="clearData()">Clear</button></td>
+            <td><button type="submit">Submit</button></td>
+        </tr>
+       </tbody></table>
+       <div>
+        <p id="result" style="font-weight: bold;font-size: 1rem; color:#770080"></p>
+       </div>
+       </div>
+</div>
+</form>
+<script src="ElectricityBill.js"></script>
+</body>
+</html>
